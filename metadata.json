@@ -1,0 +1,6 @@
+{
+  "name": "Master Tutorial",
+  "description": "High-fidelity, responsive website for the Master Tutorial Coaching Institute in Akurli, Maharashtra, featuring admissions details, course directories, and live inquiries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
