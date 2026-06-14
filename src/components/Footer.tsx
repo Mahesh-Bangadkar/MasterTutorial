@@ -109,14 +109,14 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
                   Visit Us Today!
                 </h4>
                 <p className="text-slate-400 text-sm font-medium">
-                  Master Tutorial, Akurli, Maharashtra
+                  Master Tutorial, Akurli,New Panvel,Maharashtra
                 </p>
               </div>
             </div>
 
             {/* Direct Google Maps link open in new tab */}
             <a
-              href="https://maps.google.com/?q=Akurli+Maharashtra"
+              href="https://www.google.com/maps?q=19.0021005,73.1421825&z=17&hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl bg-amber-400 hover:bg-amber-500 font-bold px-6 py-3.5 text-xs text-slate-950 transition duration-200 shadow-md shadow-amber-400/10 active:scale-95"
@@ -216,7 +216,8 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
             <div className="flex items-start gap-3 text-sm text-slate-450">
               <MapPin size={18} className="text-amber-400 shrink-0 mt-1" />
               <span className="leading-snug">
-                Master Tutorial, Near Akurli Station, Akurli, Maharashtra – 40110
+              Mateswari desire complex shop no.2, Akurli Bus stop,
+              Matheran road,Panvel-410206
               </span>
             </div>
 
@@ -229,8 +230,8 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
 
             <div className="flex items-center gap-3 text-sm text-slate-450">
               <Mail size={16} className="text-amber-400 shrink-0" />
-              <a href="mailto:mastertutorialakurli@gmail.com" className="hover:text-white transition">
-                mastertutorialakurli@gmail.com
+              <a href="mailto:mastertutorial1010@gmail.com" className="hover:text-white transition">
+                mastertutorial1010@gmail.com
               </a>
             </div>
           </div>
@@ -243,14 +244,14 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <span>
-              &copy; 2024 Master Tutorial. All Rights Reserved.
+              &copy; 2026 Master Tutorial. All Rights Reserved.
             </span>
             <div className="flex items-center gap-4">
               <span>
                 Designed with <span className="text-red-500 select-none">❤️</span> for Students
               </span>
-              <span className="text-slate-700">|</span>
-              <button
+              <span className="text-slate-700"></span>
+              {/* <button
                 onClick={() => {
                   setIsAdminOpen(true);
                   setIsAuthenticated(false);
@@ -261,7 +262,7 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
               >
                 <Lock size={12} />
                 <span>Admin Desk</span>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

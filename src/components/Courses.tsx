@@ -18,8 +18,8 @@ export default function Courses({ onEnquireClick }: CoursesProps) {
   const coursesList: Course[] = [
     {
       id: 'crs-1',
-      title: 'SSC (9th & 10th)',
-      subTitle: 'Maharashtra Board, All Subjects',
+      title: 'SSC & CBSE (9th & 10th)',
+      subTitle: 'Maharashtra Board and CBSE , All Subjects',
       description: 'Comprehensive regular classrooms tailored to empower 9th and 10th standard pupils focusing on board standards.',
       board: 'State Board (SSC)',
       subjects: ['Mathematics (Algebra & Geometry)', 'Science & Technology (Part I & II)', 'History & Civics', 'Geography', 'Languages (English, Marathi, Hindi)'],
@@ -36,16 +36,16 @@ export default function Courses({ onEnquireClick }: CoursesProps) {
     },
     {
       id: 'crs-2',
-      title: 'HSC (11th & 12th)',
-      subTitle: 'Science / Commerce, All Subjects',
+      title: 'HSC & CBSE (11th & 12th)',
+      subTitle: 'Science, All Subjects',
       description: 'Rigorous coaching designed to build clear fundamentals for college standards alongside board exam preparative drills.',
-      board: 'State Board (HSC)',
-      subjects: ['Physics, Chemistry, Maths & Biology (Science)', 'Book Keeping, Accountancy & Economics (Commerce)', 'English', 'Information Technology'],
+      board: 'State Board (HSC) and Central Board (CBSE)',
+      subjects: ['Physics, Chemistry, Maths & Biology (Science)', 'English', 'Information Technology'],
       duration: '2 Years Integrated / Single Year',
       badgeColor: 'bg-emerald-50 text-emerald-600 border-emerald-100',
       iconName: 'BookOpen',
       features: [
-        'Separate dedicated batched units for Science & Commerce',
+        'Separate dedicated batched units for Science',
         'Focus on numerical problem solving in physics/maths',
         'Step-by-step accountancy worksheet solving',
         'Syllabus completion 3 months prior to board exams',

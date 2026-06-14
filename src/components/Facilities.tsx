@@ -12,17 +12,17 @@ export default function Facilities() {
   const facilityItems: Facility[] = [
     {
       id: 'fac-1',
-      title: 'Smart Classrooms',
-      description: 'Fully equipped interactive smart TVs and modern audio-visual tools to visualize science structures and mathematical geometry.',
-      iconName: 'Tv',
+      title: 'Interactive Learning Environment',
+      description: 'Charts, models, practical activities, and digital resources help students visualize and understand complex science and mathematics concepts.',
+      iconName: 'room',
       image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=600'
     },
     {
       id: 'fac-2',
-      title: 'Doubt-Solving Library',
-      description: 'A quiet reading room with immediate on-call doubt teachers to help solve textbook exercises and critical sums.',
+      title: 'Doubt-Solving Sessions',
+      description: 'Regular doubt-solving sessions are conducted by experienced teachers to help students understand concepts clearly, solve textbook exercises, and master critical problems with confidence.',
       iconName: 'BookOpen',
-      image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=600'
+      image: 'https://plus.unsplash.com/premium_photo-1735775899874-fe427ab7f58c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
       id: 'fac-3',
@@ -92,10 +92,10 @@ export default function Facilities() {
                   {fac.description}
                 </p>
 
-                <div className="mt-5 pt-4 border-t border-slate-50 flex items-center gap-2 text-xs text-slate-400 font-semibold uppercase tracking-wider">
-                  <Shield size={13} className="text-amber-500" />
-                  <span>Sanitized &amp; Monitored 24/7</span>
-                </div>
+                {/* <div className="mt-5 pt-4 border-t border-slate-50 flex items-center gap-2 text-xs text-slate-400 font-semibold uppercase tracking-wider"> */}
+                  {/* <Shield size={13} className="text-amber-500" /> */}
+                  {/* <span>Sanitized &amp; Monitored 24/7</span> */}
+                {/* </div> */}
               </div>
             </motion.div>
           ))}

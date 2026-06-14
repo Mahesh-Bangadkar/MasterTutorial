@@ -69,7 +69,7 @@ export default function AboutAchievements() {
             <div className="mt-3.5 h-1 w-16 bg-amber-400 rounded-full" />
 
             <p className="mt-6 text-base text-slate-600 leading-relaxed">
-              Master Tutorial, Akurli is committed to provide quality education with personal attention to each student. Our goal is to build strong concepts, boost confidence and help students achieve their academic dreams.
+              Master Tutorial is committed to provide quality education with personal attention to each student. Our goal is to build strong concepts, boost confidence and help students achieve their academic dreams.
             </p>
             <p className="mt-4 text-base text-slate-600 leading-relaxed">
               We focus on customized learning paths. By keeping our batch sizes optimized, we ensure our highly qualified faculty can monitor, rectify, and elevate the learning speed of each individual student.
@@ -192,7 +192,7 @@ export default function AboutAchievements() {
                 </div>
 
                 <div className="text-xs text-slate-400 bg-slate-50/50 p-4 rounded-xl text-center">
-                  📍 Located centrally near Akurli station. Parents are always welcome to check facilities.
+                  📍 Located at Mateswari desire complex shop no.2, Akurli Bus stop, matheran road, Panvel-410206. Parents are always welcome to check facilities.
                 </div>
               </div>
             </motion.div>

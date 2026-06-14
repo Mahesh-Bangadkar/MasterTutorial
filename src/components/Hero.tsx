@@ -185,7 +185,7 @@ export default function Hero({ onEnquireClick }: HeroProps) {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
               whileHover={{ scale: 1.05 }}
-              className="absolute -right-3 top-4 sm:-right-8 sm:top-12 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 border border-slate-50 max-w-52.5 sm:max-w-57.5"
+              className="absolute -right-3 top-(-10) sm:-right-10 sm:top-1 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 border border-slate-50 max-w-52.5 sm:max-w-57.5"
               id="hero-badge-faculty"
             >
               <div className="h-10 w-10 shrink-0 flex items-center justify-center rounded-xl bg-teal-50 text-teal-600">
