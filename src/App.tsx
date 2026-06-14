@@ -21,6 +21,7 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import EnquiryModal from './components/EnquiryModal';
 import { Enquiry } from './types';
+import Popup from "./components/Popup";
 
 export default function App() {
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
@@ -76,6 +77,7 @@ export default function App() {
 
       {/* 2. Main Scrolling Sections Container */}
       <main className="grow">
+         <Popup />
         
         {/* A. Hero Banner with student mockup and orbiting badges */}
         <Hero onEnquireClick={() => openEnquiryWithCourse('SSC (9th & 10th)')} />
