@@ -16,10 +16,19 @@
   html {
     scroll-behavior: smooth;
     font-family: var(--font-sans);
+    overflow-x: hidden;
+    scrollbar-width: none;
   }
   
   body {
     @apply bg-slate-50 text-slate-800 antialiased;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
 }
 

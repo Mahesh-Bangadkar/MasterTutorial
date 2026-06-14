@@ -39,6 +39,20 @@ export default function EnquiryModal({ isOpen, onClose, preselectedCourse, onSuc
 
     setIsSubmitting(true);
 
+    const whatsappMessage = [
+      'Hello',
+      'I would like to enquire about admission at Master Tutorial.',
+      `Student Name: ${studentName}`,
+      `Parent Name: ${parentName}`,
+      `Mobile Number: ${phoneNumber}`,
+      `Email: ${email || 'Not provided'}`,
+      `Course: ${course}`,
+      `Current Grade/Class: ${grade}`,
+      `Message: ${message || 'No additional message provided.'}`,
+    ].join('\n');
+
+    const whatsappUrl = `https://wa.me/918291088424?text=${encodeURIComponent(whatsappMessage)}`;
+
     // Simulate submission delay
     setTimeout(() => {
       const newEnquiry: Enquiry = {
@@ -67,6 +81,9 @@ export default function EnquiryModal({ isOpen, onClose, preselectedCourse, onSuc
       localStorage.setItem('master_tutorial_enquiries', JSON.stringify(list));
 
       onSuccess(newEnquiry);
+
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+
       setIsSubmitting(false);
       setSubmitSuccess(true);
 

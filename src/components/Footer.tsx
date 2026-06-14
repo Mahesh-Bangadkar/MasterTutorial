@@ -101,7 +101,7 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6" id="directions-ribbon">
             <div className="flex items-center gap-4 text-left">
-              <div className="h-12 w-12 rounded-full bg-amber-400 flex items-center justify-center text-slate-950 shadow-inner flex-shrink-0 animate-pulse">
+              <div className="h-12 w-12 rounded-full bg-amber-400 flex items-center justify-center text-slate-950 shadow-inner shrink-0 animate-pulse">
                 <MapPin size={22} />
               </div>
               <div>
@@ -214,21 +214,21 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
             </h4>
             
             <div className="flex items-start gap-3 text-sm text-slate-450">
-              <MapPin size={18} className="text-amber-400 flex-shrink-0 mt-1" />
+              <MapPin size={18} className="text-amber-400 shrink-0 mt-1" />
               <span className="leading-snug">
                 Master Tutorial, Near Akurli Station, Akurli, Maharashtra – 40110
               </span>
             </div>
 
-            <div className="flex items-center gap-3 text-sm text-slate-450 !mt-5">
-              <Phone size={16} className="text-amber-400 flex-shrink-0" />
-              <a href="tel:+919876543210" className="hover:text-white transition">
-                +91 98765 43210
+            <div className="flex items-center gap-3 text-sm text-slate-450 mt-5!">
+              <Phone size={16} className="text-amber-400 shrink-0" />
+              <a href="tel:+918291088424" className="hover:text-white transition">
+                +91 82910 88424
               </a>
             </div>
 
             <div className="flex items-center gap-3 text-sm text-slate-450">
-              <Mail size={16} className="text-amber-400 flex-shrink-0" />
+              <Mail size={16} className="text-amber-400 shrink-0" />
               <a href="mailto:mastertutorialakurli@gmail.com" className="hover:text-white transition">
                 mastertutorialakurli@gmail.com
               </a>
@@ -336,7 +336,7 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
                 </div>
               ) : (
                 /* Authenticated Enquiries Console listing leads */
-                <div className="p-6 overflow-hidden flex flex-col flex-grow select-none">
+                <div className="p-6 overflow-hidden flex flex-col grow select-none">
                   
                   {/* Search and Action Bar */}
                   <div className="flex flex-col sm:flex-row items-center gap-4 justify-between pb-5 border-b border-slate-100 mb-5">
@@ -352,7 +352,7 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
                       />
                     </div>
 
-                    <div className="flex items-center gap-2 flex-shrink-0">
+                    <div className="flex items-center gap-2 shrink-0">
                       <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-lg">
                         Total Enquiries: {enquiries.length}
                       </span>
@@ -370,7 +370,7 @@ export default function Footer({ onEnquireClick, enquiriesCount = 0 }: FooterPro
                   </div>
 
                   {/* Leads spreadsheet view */}
-                  <div className="overflow-y-auto flex-grow max-h-[50vh]">
+                  <div className="overflow-y-auto grow max-h-[50vh]">
                     {filteredEnquiries.length === 0 ? (
                       <div className="py-12 text-center text-slate-400 space-y-2">
                         <Clock size={28} className="mx-auto text-slate-300" />

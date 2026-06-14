@@ -15,6 +15,7 @@ interface HeaderProps {
 export default function Header({ onEnquireClick, activeSection }: HeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const logoImage = new URL('../Public/logo.png', import.meta.url).href;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +28,7 @@ export default function Header({ onEnquireClick, activeSection }: HeaderProps) {
   const menuItems = [
     { label: 'Home', id: '#home' },
     { label: 'About Us', id: '#about' },
+    { label: 'Faculty ', id: '#faculty' },
     { label: 'Courses', id: '#courses' },
     { label: 'Facilities', id: '#facilities' },
     { label: 'Gallery', id: '#gallery' },
@@ -66,17 +68,11 @@ export default function Header({ onEnquireClick, activeSection }: HeaderProps) {
             className="flex items-center gap-2 cursor-pointer select-none group"
             id="brand-logo"
           >
-            <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-slate-900 text-amber-400 font-bold text-2xl shadow-md border border-slate-800 transition transform group-hover:scale-105">
-              M
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-extrabold tracking-tight text-slate-900 font-display leading-none">
-                MASTER
-              </span>
-              <span className="text-xs font-semibold tracking-widest text-amber-500 font-sans leading-none mt-1">
-                TUTORIAL
-              </span>
-            </div>
+            <img
+              src={logoImage}
+              alt="Master Tutorial"
+              className="h-11 w-auto max-w-55 object-contain transition-transform duration-200 group-hover:scale-[1.02] sm:h-12"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -108,7 +104,7 @@ export default function Header({ onEnquireClick, activeSection }: HeaderProps) {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:+918291088424"
-              className="inline-flex items-center gap-2 rounded-full bg-[#1e293b] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 transition duration-200 transform active:scale-95"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 transition duration-200 transform active:scale-95"
               id="header-call-btn"
             >
               <Phone size={15} className="text-amber-400 fill-amber-400 animate-pulse" />
@@ -163,12 +159,12 @@ export default function Header({ onEnquireClick, activeSection }: HeaderProps) {
 
               <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918291088424"
                   className="flex items-center justify-center gap-2 rounded-xl bg-slate-900 text-white py-3 font-semibold text-sm"
                   id="mobile-nav-phone"
                 >
                   <Phone size={16} className="text-amber-400 fill-amber-400" />
-                  <span>Call Master Tutorial: +91 98765 43210</span>
+                  <span>Call Master Tutorial: +91 8291088424</span>
                 </a>
                 <button
                   onClick={() => {

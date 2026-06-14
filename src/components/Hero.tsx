@@ -12,6 +12,8 @@ interface HeroProps {
 }
 
 export default function Hero({ onEnquireClick }: HeroProps) {
+  const studentImage = new URL('../Public/student image.png', import.meta.url).href;
+
   const handleViewCourses = () => {
     const coursesSection = document.querySelector('#courses');
     if (coursesSection) {
@@ -107,9 +109,9 @@ export default function Hero({ onEnquireClick }: HeroProps) {
               id="hero-location"
             >
               <div className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-500/15 text-amber-400 shadow-inner">
-                <MapPin size={16} />
+                <MapPin size={16}   />
               </div>
-              <span className="tracking-wide">Akurli, Maharashtra</span>
+              <span className="tracking-wide">Akurli,New Panvel,Maharashtra</span>
             </motion.div>
 
             {/* Subtext description */}
@@ -149,23 +151,30 @@ export default function Hero({ onEnquireClick }: HeroProps) {
                 <MessageSquare size={16} className="text-amber-400" />
                 <span>Enquire Now</span>
               </button>
+
+              <a
+                href="https://www.google.com/maps?q=19.0021005,73.1421825&z=17&hl=en"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl border border-amber-400/40 bg-amber-400/10 px-6 py-3.5 text-sm font-semibold text-amber-300 hover:bg-amber-400 hover:text-slate-950 transition duration-200 transform hover:-translate-y-0.5 active:translate-y-0"
+                id="hero-cta-directions"
+              >
+                <MapPin size={16} />
+                <span>Get Directions</span>
+              </a>
             </motion.div>
 
           </div>
 
           {/* Hero Right Student Graphic with Floating Badges */}
           <div className="lg:col-span-5 relative flex justify-center items-center mt-8 lg:mt-0" id="hero-graphic-section">
-            
-            {/* The Big Yellow Circle behind student */}
-            <div className="absolute -z-10 h-80 w-80 sm:h-96 sm:w-96 rounded-full bg-amber-400 transform translate-y-4" />
-
             {/* Student Frame */}
-            <div className="relative w-72 h-80 sm:w-80 sm:h-96 object-bottom flex items-end overflow-visible select-none">
+            <div className="relative w-[min(34rem,92vw)] aspect-square flex items-end justify-center overflow-visible select-none">
               <img
-                src="https://images.unsplash.com/photo-1541178735493-479c3a27a789?auto=format&fit=crop&q=80&w=600"
+                src={studentImage}
                 alt="Representative student from Master Tutorial Akurli Maharashtra"
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover rounded-3xl shadow-2xl saturate-105 border-4 border-slate-900"
+                className="w-full h-full object-contain object-bottom drop-shadow-2xl translate-y-2 sm:translate-y-4"
                 id="student-hero-img"
               />
             </div>
@@ -176,10 +185,10 @@ export default function Hero({ onEnquireClick }: HeroProps) {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
               whileHover={{ scale: 1.05 }}
-              className="absolute -right-3 top-4 sm:-right-8 sm:top-12 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 border border-slate-50 max-w-[210px] sm:max-w-[230px]"
+              className="absolute -right-3 top-4 sm:-right-8 sm:top-12 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 border border-slate-50 max-w-52.5 sm:max-w-57.5"
               id="hero-badge-faculty"
             >
-              <div className="h-10 w-10 flex-shrink-0 flex items-center justify-center rounded-xl bg-teal-50 text-teal-600">
+              <div className="h-10 w-10 shrink-0 flex items-center justify-center rounded-xl bg-teal-50 text-teal-600">
                 <GraduationCap size={22} />
               </div>
               <div>
@@ -198,10 +207,10 @@ export default function Hero({ onEnquireClick }: HeroProps) {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
               whileHover={{ scale: 1.05 }}
-              className="absolute -left-4 bottom-16 sm:-left-12 sm:bottom-24 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 border border-slate-50 max-w-[210px] sm:max-w-[230px]"
+              className="absolute -left-4 bottom-16 sm:-left-12 sm:bottom-24 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 border border-slate-50 max-w-52.5 sm:max-w-57.5"
               id="hero-badge-results"
             >
-              <div className="h-10 w-10 flex-shrink-0 flex items-center justify-center rounded-xl bg-amber-50 text-amber-600">
+              <div className="h-10 w-10 shrink-0 flex items-center justify-center rounded-xl bg-amber-50 text-amber-600">
                 <Award size={22} className="fill-amber-50" />
               </div>
               <div>
@@ -220,10 +229,10 @@ export default function Hero({ onEnquireClick }: HeroProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
               whileHover={{ scale: 1.05 }}
-              className="absolute -right-4 bottom-1 sm:-right-8 sm:bottom-4 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 border border-slate-50 max-w-[210px] sm:max-w-[230px]"
+              className="absolute -right-4 bottom-1 sm:-right-8 sm:bottom-4 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 border border-slate-50 max-w-52.5 sm:max-w-57.5"
               id="hero-badge-attention"
             >
-              <div className="h-10 w-10 flex-shrink-0 flex items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+              <div className="h-10 w-10 shrink-0 flex items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
                 <Users size={22} />
               </div>
               <div>

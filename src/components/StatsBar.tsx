@@ -66,7 +66,7 @@ export default function StatsBar() {
                 <h3 className="text-base font-bold text-slate-800 font-display">
                   {p.title}
                 </h3>
-                <p className="mt-1.5 text-xs text-slate-500 max-w-[200px] leading-relaxed">
+                <p className="mt-1.5 text-xs text-slate-500 max-w-50 leading-relaxed">
                   {p.desc}
                 </p>
               </div>

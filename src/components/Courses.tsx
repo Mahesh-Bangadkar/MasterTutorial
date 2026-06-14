@@ -73,7 +73,7 @@ export default function Courses({ onEnquireClick }: CoursesProps) {
     {
       id: 'crs-4',
       title: 'Foundation Courses',
-      subTitle: 'For 6th, 7th, 8th, All Subjects',
+      subTitle: 'For 7th, 8th, All Subjects',
       description: 'Nurturing logical thinking, communication, and basic maths/science principles early for seamless high school transition.',
       board: 'CBSE / ICSE / State Board',
       subjects: ['Mathematics', 'General Science', 'Social Studies', 'English Comprehension & Grammar', 'Mental Ability & Reasoning'],

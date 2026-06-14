@@ -12,6 +12,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import StatsBar from './components/StatsBar';
+import FacultySection from './components/FacultySection';
 import Courses from './components/Courses';
 import AboutAchievements from './components/AboutAchievements';
 import Testimonials from './components/Testimonials';
@@ -29,7 +30,7 @@ export default function App() {
 
   // Scroll spy implementation for highlighting active navbar section
   useEffect(() => {
-    const sections = ['home', 'about', 'courses', 'facilities', 'gallery', 'contact'];
+    const sections = ['home', 'about', 'faculty', 'courses', 'facilities', 'gallery', 'contact'];
     
     const handleScrollSpy = () => {
       const scrollPosition = window.scrollY + 160; // offset
@@ -74,7 +75,7 @@ export default function App() {
       />
 
       {/* 2. Main Scrolling Sections Container */}
-      <main className="flex-grow">
+      <main className="grow">
         
         {/* A. Hero Banner with student mockup and orbiting badges */}
         <Hero onEnquireClick={() => openEnquiryWithCourse('SSC (9th & 10th)')} />
@@ -82,19 +83,22 @@ export default function App() {
         {/* B. Ribbon Highlights of tutoring pillars container */}
         <StatsBar />
 
-        {/* C. Secondary Section: Courses Catalogue of Cards */}
+        {/* C. Faculty profile and founder spotlight */}
+        <FacultySection />
+
+        {/* D. Secondary Section: Courses Catalogue of Cards */}
         <Courses onEnquireClick={openEnquiryWithCourse} />
 
-        {/* D. Double Sided block: About text details + Achievements box */}
+        {/* E. Double Sided block: About text details + Achievements box */}
         <AboutAchievements />
 
-        {/* E. Facilities Slider / grid */}
+        {/* F. Facilities Slider / grid */}
         <Facilities />
 
-        {/* F. Testimonials parent / child quotes slider wrapper */}
+        {/* G. Testimonials parent / child quotes slider wrapper */}
         <Testimonials />
 
-        {/* G. Lightbox Category photo directory */}
+        {/* H. Lightbox Category photo directory */}
         <Gallery />
 
       </main>
