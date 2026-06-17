@@ -8,7 +8,7 @@ import { motion } from 'motion/react';
 import { Award, BookOpen, GraduationCap, Target, Users } from 'lucide-react';
 
 export default function FacultySection() {
-  const facultyImage = new URL('../Public/deven sir .png', import.meta.url).href;
+  const facultyImage = new URL('../Public/devensirfull.png', import.meta.url).href;
 
   const highlights = [
     {

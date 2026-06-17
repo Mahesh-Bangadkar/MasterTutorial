@@ -8,21 +8,24 @@ import { motion } from 'motion/react';
 import { Tv, BookOpen, Users, Clock, Award, Shield } from 'lucide-react';
 import { Facility } from '../types';
 
+
 export default function Facilities() {
+  const doubtsolve = new URL('../Public/doubtsolve.jpeg', import.meta.url).href;
+   const classroom = new URL('../Public/Classroom1.jpeg', import.meta.url).href;
   const facilityItems: Facility[] = [
     {
       id: 'fac-1',
       title: 'Interactive Learning Environment',
       description: 'Charts, models, practical activities, and digital resources help students visualize and understand complex science and mathematics concepts.',
       iconName: 'room',
-      image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=600'
+      image: classroom
     },
     {
       id: 'fac-2',
       title: 'Doubt-Solving Sessions',
       description: 'Regular doubt-solving sessions are conducted by experienced teachers to help students understand concepts clearly, solve textbook exercises, and master critical problems with confidence.',
       iconName: 'BookOpen',
-      image: 'https://plus.unsplash.com/premium_photo-1735775899874-fe427ab7f58c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      image: doubtsolve
     },
     {
       id: 'fac-3',

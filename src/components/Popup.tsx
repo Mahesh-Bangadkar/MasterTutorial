@@ -8,7 +8,7 @@ const popupImage = new URL('../Public/SSC 2026 result.png', import.meta.url).hre
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(false);
-    }, 5000);
+    }, 7000);
 
     return () => clearTimeout(timer);
   }, []);

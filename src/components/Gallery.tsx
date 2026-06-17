@@ -16,49 +16,83 @@ export default function Gallery() {
     'All', 'Classroom', 'Events', 'Toppers', 'Activities'
   ];
 
-  const galleryItems: GalleryItem[] = [
-    {
+   const InteractiveEnvironment = new URL('../Public/Mentorship.jpeg', import.meta.url).href;
+   const Interactive = new URL('../Public/interaction.jpeg', import.meta.url).href;
+   const Aniversery = new URL('../Public/Fun.jpeg', import.meta.url).href;
+   const FunActivity = new URL('../Public/Fun2.jpeg', import.meta.url).href;
+   const Trip1 = new URL('../Public/Trip1.jpeg', import.meta.url).href;
+   const Trip2 = new URL('../Public/Trip2.jpeg', import.meta.url).href;
+   const Trip3 = new URL('../Public/Trip3.jpeg', import.meta.url).href;
+   const Toppers = new URL('../Public/SSC 2026 result.png', import.meta.url).href;
+   const Classroom = new URL('../Public/Classroom1.jpeg', import.meta.url).href;
+   const galleryItems: GalleryItem[] = [
+     {
       id: 'gal-1',
       category: 'Classroom',
-      title: 'Digital Smart Classroom',
-      image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=600',
-      description: 'Active math derivation lecture using whiteboard projection charts.'
+      title: 'Every Great Result Starts with a Clear Concept ',
+      image: InteractiveEnvironment,
+      description: 'Strong concepts create strong results our interactive teaching approach helps students understand, apply, and excel with confidence.'
+
+    },
+     {
+      id: 'gal-7',
+      category: 'Classroom',
+      title: 'Interaction Builds Confidence',
+      image: Interactive,
+      description: 'Students gain confidence by actively participating, asking questions, and engaging in every lesson.'
+
+    },
+     {
+      id: 'gal-8',
+      category: 'Classroom',
+      title: 'Interaction Builds Confidence',
+      image: Classroom,
+      description: 'Students gain confidence by actively participating, asking questions, and engaging in every lesson.'
+
     },
     {
       id: 'gal-2',
       category: 'Events',
-      title: 'Annual Felicitation',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600',
-      description: 'Celebrating high board scorers and merit holders from Akurli.'
+      title: '🎓 Second Anniversary Celebration',
+      image: Aniversery,
+      description: 'Marking two wonderful years of knowledge, dedication, and excellence in education.'
     },
     {
       id: 'gal-3',
-      category: 'Toppers',
-      title: 'Board Exam Toppers',
-      image: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=600',
-      description: 'SSC board toppers sharing preparation strategies in groups.'
+      category: 'Events',
+      title: 'Learning Beyond the Classroom',
+      image: FunActivity,
+      description: 'We combine education with interactive games and activities to develop creativity, confidence, and teamwork.'
     },
     {
       id: 'gal-4',
-      category: 'Activities',
-      title: 'Science Experiments Day',
-      image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600',
-      description: 'Students testing chemical reaction models inside the laboratory.'
+      category: 'Events',
+      title: 'Creating Memories, Building Confidence',
+      image: Trip1,
+      description: 'Through trips, outings, and shared adventures, students develop confidence, friendships, and lifelong memories'
     },
     {
       id: 'gal-5',
-      category: 'Classroom',
-      title: 'Doubt Solving Hour',
-      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=600',
-      description: 'Individual parent and kids counselling under professional metrics.'
+      category: 'Events',
+      title: 'Creating Memories, Building Confidence',
+      image: Trip2,
+      description: 'Through trips, outings, and shared adventures, students develop confidence, friendships, and lifelong memories'
     },
     {
       id: 'gal-6',
-      category: 'Activities',
-      title: 'Cooperative Group Studies',
-      image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600',
-      description: 'Peer group studying under mentorship to master physics numericals.'
-    }
+      category: 'Events',
+      title: 'Creating Memories, Building Confidence',
+      image: Trip3,
+      description: 'Through trips, outings, and shared adventures, students develop confidence, friendships, and lifelong memories'
+    },
+    {
+      id: 'gal-7',
+      category: 'Toppers',
+      title: '🏆 Our Star Achievers',
+      image: Toppers,
+      description: 'Celebrating the hard work, dedication, and outstanding academic success of our students.'
+    },
+   
   ];
 
   const filteredItems = selectedCategory === 'All'
