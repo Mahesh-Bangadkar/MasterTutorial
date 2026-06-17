@@ -19,7 +19,7 @@ export default function Gallery() {
    const InteractiveEnvironment = new URL('../Public/Mentorship.jpeg', import.meta.url).href;
    const Interactive = new URL('../Public/interaction.jpeg', import.meta.url).href;
    const Aniversery = new URL('../Public/Fun.jpeg', import.meta.url).href;
-   const FunActivity = new URL('../Public/Fun2.jpeg', import.meta.url).href;
+   const FunActivity = new URL('../Public/fun2.jpeg', import.meta.url).href;
    const Trip1 = new URL('../Public/Trip1.jpeg', import.meta.url).href;
    const Trip2 = new URL('../Public/Trip2.jpeg', import.meta.url).href;
    const Trip3 = new URL('../Public/Trip3.jpeg', import.meta.url).href;
